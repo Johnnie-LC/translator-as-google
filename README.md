@@ -1,27 +1,32 @@
-# React + TypeScript + Vite
+# Translator App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Web application that allows translation in 3 languages ​​(German, English and Spanish) and the function of detecting language. (Inspired by google translate)
 
-Currently, two official plugins are available:
+The API used to translate is [LibreTranslate](https://github.com/cmooredev/LibreTranslate) used locally
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## To Run the APP
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
+Installation of dependencies
 ```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
+   npm install
+```
+Run local
+```js
+   npm run dev
+```
+Then open a web browser to http://localhost:5173
+
+To use [LibreTranslate](https://github.com/cmooredev/LibreTranslate) you first need to download the repository and run it locally
+
+To download [LibreTranslate](https://github.com/cmooredev/LibreTranslate):
+```js
+   git clone https://github.com/cmooredev/LibreTranslate
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Install dependency and run the repository
+
+```js
+   pip install libretranslate
+   python3 main.py
+```
+Then open a web browser to http://localhost:5000
